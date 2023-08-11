@@ -17,7 +17,7 @@ const Auth = () => {
             {
               IsSignUp && (
               <label htmlFor="name">
-                  <h4>Display Name</h4>
+                  <h4>Display Name Contant</h4>
                   <input type="text" id="name" name="name"/>
               </label>)
             }
