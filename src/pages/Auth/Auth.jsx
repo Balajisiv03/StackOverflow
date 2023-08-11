@@ -11,13 +11,13 @@ const Auth = () => {
   return (
      <section class="auth-section">
        {IsSignUp && <AboutAuth/>}
-        <div class="auth-container">
+        <div class="auth-container-2">
           {!IsSignUp && <img src={logo} alt="stackoverflow-icon" className="login-logo"/>}
           <form>
             {
               IsSignUp && (
               <label htmlFor="name">
-                  <h4>Display Name Contant</h4>
+                  <h4>Display Name</h4>
                   <input type="text" id="name" name="name"/>
               </label>)
             }
@@ -28,7 +28,7 @@ const Auth = () => {
             <label htmlFor="password">
               <div style={{display: "flex",justifyContent: "space-between"}}>
                 <h4>Password</h4>
-                {!IsSignUp && <p style={{color:"#007ac6" ,fontSize: "13px"}}>Forget Password</p>}
+                {!IsSignUp && <p style={{color:"#007ac6" ,fontSize: "13px",padding:"0 180px 0px 0"}}>Forget Password</p>}
               </div>
               <input type="password" id="password" name="password"/>  
               {IsSignUp && (<p style={{color:"#666767",fontSize: "13px"}}>Passwords must contain atleast eight<br /> characters,including atleast 1 letter and 1<br/> number.</p>
@@ -50,7 +50,7 @@ const Auth = () => {
               <button type="submit" className="auth-btn">{IsSignUp?"Sign Up":"Log in"}</button>
           </form>
           <p>
-            {IsSignUp?"Already have an account":"Don't have an account"}
+            {IsSignUp?"Already have an account?":"Don't have an account?"}
             <button type="submit" className="handle-switch-btn" onClick={handleswitch}>{IsSignUp?"Login":"Sign Up"}</button>
           </p>
         </div>
