@@ -33,7 +33,7 @@ const Auth = () => {
               <input type="password" id="password" name="password"/>  
               {IsSignUp && (<p style={{color:"#666767",fontSize: "13px"}}>Passwords must contain atleast eight<br /> characters,including atleast 1 letter and 1<br/> number.</p>
               )}
-              </label>  
+            </label>  
               {IsSignUp && (
                 <label htmlFor="check">
                   <input type="checkbox" id="check"/>
