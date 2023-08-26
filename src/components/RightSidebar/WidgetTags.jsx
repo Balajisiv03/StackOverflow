@@ -8,7 +8,7 @@ const WidgetTags = () => {
         <div className="widget-tags-div">
             {
               tags.map((tag) => (
-                <p key={tag}>{tag}</p>
+                <p key={tag}>{tag} </p>
               ))
             }
         </div>
