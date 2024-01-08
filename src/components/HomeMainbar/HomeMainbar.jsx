@@ -11,32 +11,57 @@ const HomeMainbar = () => {
 
   var questionsList=[
     {
-    id: 1,
-    votes: 3,
+    _id: 1,
+    upVotes: 3,
+    downVotes:2,
     noOfAnswers: 2,
     questionTitle: "What is a function?",
     questionBody: "it meant to be",
     questionTags: ["java","node js","react js","mangodb"],
     userPosted: "mano",
-    askedOn: "jan 1"
+    userId: 1,
+    askedOn: "jan 1",
+    answer: [{
+      answerBody: "Answer",
+      userAnswered: 'kumar',
+      answeredOn: "jan 2",
+      userId: 2
+    }]
    },{
-    id: 1,
-    votes: 3,
-    noOfAnswers: 2,
+    _id: 2,
+    upVotes: 3,
+    downVotes: 2,
+    noOfAnswers: 0,
     questionTitle: "What is a function?",
     questionBody: "it meant to be",
     questionTags: ["java","R","Python"],
     userPosted: "mano",
-    askedOn: "jan 1"
+    userId: 1,
+    askedOn: "jan 1",
+    answer: [{
+      answerBody: "Answer",
+      userAnswered: 'kumar',
+      answeredOn: "jan 2",
+      userId: 2
+    }]
    },{
-    id: 1,
-    votes: 3,
-    noOfAnswers: 2,
+    _id: 3,
+    upVotes: 3,
+    downVotes: 2,
+    noOfAnswers: 0,
     questionTitle: "What is a function?",
     questionBody: "it meant to be",
     questionTags: ["java","R","python"],
     userPosted: "mano",
-    askedOn: "jan 1" }]
+    userId: 1,
+    askedOn: "jan 1",
+    answer: [{
+      answerBody: "Answer",
+      userAnswered: 'kumar',
+      answeredOn: "jan 2",
+      userId: 2
+    }]
+  }]
 
     const checkAuth=()=>{
        if(user===null){
